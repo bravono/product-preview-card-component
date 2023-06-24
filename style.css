@@ -3,27 +3,46 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid grey;
   width: 100vw;
-  height: 90vh;
+  height: 200vh;
+  background: hsl(30, 38%, 92%);
 }
 
 .section {
   display: flex;
   flex-direction: row;
   height: 600px;
-  border: 3px solid dodgerblue;
+  background: rgb(255, 255, 255);
+  border-radius: 10px 10px 10px 10px;
 }
 
 .left-box {
-  height: 600px;
+  height: auto;
   width: 400px;
   border-radius: 10px 0 0 10px;
 }
 
 .right-box {
-  height: 600px;
+  height: auto;
   width: 400px;
-  background: rgb(197, 197, 197);
-  border-radius: 0 10px 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-box {
+    height: auto;
+    border-radius: 10px 10px 0 0px;
+  }
+
+  .right-box {
+    height: 600px;
+  }
+
+  .section {
+    border-radius: 10px 10px 10px 10px;
+  }
 }

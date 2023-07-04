@@ -1,7 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 h1,
@@ -16,6 +16,10 @@ h1 {
 
 h2 {
   color: hsl(158, 36%, 37%);
+}
+
+.grey {
+  color: hsla(0, 0%, 0%, 0.5);
 }
 
 .container {
@@ -48,7 +52,7 @@ h2 {
   width: 400px;
   display: grid;
   grid-template-columns: 70%;
-  grid-template-rows: 15% 25% 25% 15% 15%;
+  grid-template-rows: 15% 25% 25% 10% 25%;
   justify-content: center;
   align-items: center;
 }
@@ -60,15 +64,27 @@ h2 {
 .price {
   display: grid;
   grid-template-columns: 60% 40%;
+  justify-items: center;
   align-items: center;
 }
 
+.strike {
+  text-decoration: line-through;
+}
+
 .btn {
-  height: 55px;
-  border: none;
+  font-family: "Montserrat", sans-serif;
   color: white;
+  font-size: 1rem;
+  height: 70px;
+  width: 100%;
+  border: none;
   border-radius: 10px;
   background: hsl(158, 36%, 20%);
+  display: grid;
+  grid-template-columns: 5% 45%;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 445px) {

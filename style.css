@@ -80,14 +80,18 @@ h2 {
   width: 100%;
   border: none;
   border-radius: 10px;
-  background: hsl(158, 36%, 20%);
+  background: hsl(158, 36%, 37%);
   display: grid;
   grid-template-columns: 5% 45%;
   justify-content: center;
   align-items: center;
 }
 
-@media screen and (max-width: 445px) {
+.btn:hover {
+  background: hsl(158, 36%, 20%);
+}
+
+@media screen and (max-width: 375px) {
   .section {
     flex-direction: column;
     height: auto;

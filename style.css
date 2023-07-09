@@ -82,7 +82,7 @@ h2 {
   border-radius: 10px;
   background: hsl(158, 36%, 37%);
   display: grid;
-  grid-template-columns: 5% 45%;
+  grid-template-columns: 10% 45%;
   justify-content: center;
   align-items: center;
 }
